@@ -19,7 +19,6 @@ my $deps = {
     'Sub::Quote'               => '0',
     'Try::Tiny'                => '0.04',
     'Scalar::Util'             => '0',
-    'XML::LibXML'              => '1.69',
   },
   recommends => {
     'Template'                 => '2.20',
@@ -28,6 +27,10 @@ my $deps = {
     'Graph::Directed'          => '0',
     'Spreadsheet::ParseExcel'  => '0.41',
     'Text::RecordParser'       => '0.02',
+    'XML::LibXML'              => '1.69',
+  },
+  configure_requires => {
+    'XML::LibXML'              => '1.69',
   },
   test_requires => {
     'JSON'                     => '2.0',
